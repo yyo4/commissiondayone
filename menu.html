@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>menu - yyo4</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍥</text></svg>">
+<meta property="og:title" content="menu - yyo4">
+<meta name="theme-color" content="#ffffff">
+<meta name="color-scheme" content="light only">
+<style>
+  @font-face{
+    font-family:"Donguri";
+    src:url("x10y12pxDonguriDuel.ttf") format("truetype");
+    font-display:swap;
+  }
+  :root{
+    --ink:#4a4a4a;
+    --soft:#9a9a9a;
+    --faint:#c8c8c8;
+    --blue:#a3d4f0;
+    --bluedeep:#7fa8d4;
+    --pink:#e7a7c7;
+    --line:#ececec;
+  }
+  *{box-sizing:border-box;}
+  html{font-size:16px;background:#fff;color-scheme:light only;}
+  body{
+    background:#fff;
+    color:var(--ink);
+    font-family:"Helvetica Neue","Microsoft JhengHei","微軟正黑體",sans-serif;
+    font-size:10pt;
+    line-height:1.9;
+    letter-spacing:1.27px;
+    max-width:640px;
+    margin:0 auto;
+    padding:50px 32px 100px;
+    text-align:center;
+    animation:fadeUp 1s ease-out both;
+  }
+  @keyframes fadeUp{
+    from{opacity:0;transform:translateY(12px);}
+    to{opacity:1;transform:translateY(0);}
+  }
+  .nav{
+    font-family:"Donguri",monospace;
+    font-size:11pt;letter-spacing:2px;
+    margin-bottom:50px;
+  }
+  .nav a{
+    color:var(--soft);text-decoration:none;margin:0 12px;
+    transition:color .5s ease;
+  }
+  .nav a:hover{color:var(--blue);}
+  .nav a.on{color:var(--pink);}
+
+  .page-title{
+    font-family:"Donguri",monospace;
+    font-size:15pt;color:var(--blue);
+    letter-spacing:1px;text-align:left;
+    margin:0 0 10px;font-weight:400;
+  }
+  .page-title .dash{color:var(--bluedeep);margin-right:3px;}
+  .legend{
+    text-align:left;color:var(--soft);font-size:9pt;
+    line-height:1.9;margin:0 0 40px;
+    padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  }
+  .legend b{color:var(--bluedeep);font-weight:400;}
+
+  .item{
+    text-align:left;
+    margin:0 0 48px;
+  }
+  .item-img{
+    width:100%;max-width:360px;height:auto;
+    image-rendering:pixelated;
+    display:block;margin:0 auto 14px;
+    border:1px solid var(--line);
+    background:#fafafa;
+  }
+  .item-head{
+    display:flex;align-items:baseline;gap:10px;
+    margin-bottom:8px;justify-content:flex-start;
+  }
+  .item-no{
+    font-family:"Donguri",monospace;color:var(--pink);
+    font-size:13pt;letter-spacing:1px;
+  }
+  .item-name{font-size:12pt;color:var(--ink);}
+  .item-price{
+    margin-left:auto;color:var(--bluedeep);
+    font-family:"Donguri",monospace;font-size:12pt;
+  }
+  .item-desc{color:var(--soft);font-size:9.5pt;line-height:1.95;}
+  .item-desc .tag{color:var(--blue);font-family:"Donguri",monospace;margin-right:4px;}
+  .paused{color:var(--faint);}
+  .paused .item-no,.paused .item-price{color:var(--faint);}
+
+  .foot{
+    font-family:"Donguri",monospace;
+    color:var(--faint);font-size:9pt;letter-spacing:2px;
+    margin-top:70px;
+  }
+  @media (prefers-reduced-motion:reduce){ body{animation:none;} }
+</style>
+</head>
+<body>
+
+  <div class="nav">
+    <a href="index.html">- rule</a>
+    <a href="menu.html" class="on">- menu</a>
+  </div>
+
+  <p class="page-title"><span class="dash">-</span>menu</p>
+  <p class="legend">
+    📂©︎︎𝘆𝘆𝗼𝟰  標價為新台幣。<br>
+    <b>＃</b> 說明　<b>＋</b> 限制　<b>☆</b> 無可加購選項
+  </p>
+
+  <div class="item paused">
+    <img class="item-img" src="item1.gif" alt="item 1">
+    <div class="item-head">
+      <span class="item-no">①</span>
+      <span class="item-name">電子雞吊飾</span>
+      <span class="item-price">⏸ 已暫停</span>
+    </div>
+    <p class="item-desc">驚喜包性質，無草圖直接完稿。。</p>
+  </div>
+
+  <div class="item">
+    <img class="item-img" src="item2.gif" alt="item 2">
+    <div class="item-head">
+      <span class="item-no">②</span>
+      <span class="item-name">趴趴</span>
+      <span class="item-price">$380</span>
+    </div>
+    <p class="item-desc"><span class="tag">＃</span>模板固定貓耳尾不可拆換／自選毛線球一色</p>
+  </div>
+
+  <div class="item">
+    <img class="item-img" src="item3.gif" alt="item 3">
+    <div class="item-head">
+      <span class="item-no">③</span>
+      <span class="item-name">籤筒</span>
+      <span class="item-price">$320</span>
+    </div>
+    <p class="item-desc"><span class="tag">＃</span>依設定調整眼型口型</p>
+  </div>
+
+  <div class="item">
+    <img class="item-img" src="item4.gif" alt="item 4">
+    <div class="item-head">
+      <span class="item-no">④</span>
+      <span class="item-name">踢踢</span>
+      <span class="item-price">$380</span>
+    </div>
+    <p class="item-desc">
+      <span class="tag">＋</span>不收複雜設定<br>
+      <span class="tag">＃</span>依設定調整眼型<br>
+      <span class="tag">☆</span>無加購小物件／吉祥物
+    </p>
+  </div>
+
+  <div class="item">
+    <img class="item-img" src="item5.gif" alt="item 5">
+    <div class="item-head">
+      <span class="item-no">⑤</span>
+      <span class="item-name">咬你！</span>
+      <span class="item-price">$680</span>
+    </div>
+    <p class="item-desc"><span class="tag">＃</span>無提供翻轉圖檔、需另填寫表單</p>
+  </div>
+
+  <div class="item">
+    <img class="item-img" src="item6.gif" alt="item 6">
+    <div class="item-head">
+      <span class="item-no">⑥</span>
+      <span class="item-name">近視小朋友 <span style="color:var(--pink);font-family:Donguri,monospace;font-size:9pt;">NEW</span></span>
+      <span class="item-price">$380</span>
+    </div>
+    <p class="item-desc">
+      <span class="tag">＋</span>不收複雜設定<br>
+      <span class="tag">＃</span>依設定隨機調整配件顏色，無法指定<br>
+      <span class="tag">☆</span>一併提供開關燈版本、無加購小物件／吉祥物
+    </p>
+  </div>
+
+  <div class="item">
+    <img class="item-img" src="item7.gif" alt="item 7">
+    <div class="item-head">
+      <span class="item-no">⑦</span>
+      <span class="item-name">早餐麥片！</span>
+      <span class="item-price">$500</span>
+    </div>
+    <p class="item-desc">
+      <span class="tag">＃</span>依設定隨機調整配件顏色，無法指定<br>
+      <span class="tag">☆</span>無加價換吉祥物
+    </p>
+  </div>
+
+  <div class="item">
+    <img class="item-img" src="item8.gif" alt="item 8">
+    <div class="item-head">
+      <span class="item-no">⑧</span>
+      <span class="item-name">盯～ <span style="color:var(--pink);font-family:Donguri,monospace;font-size:9pt;">NEW</span></span>
+      <span class="item-price">$380</span>
+    </div>
+    <p class="item-desc">
+      <span class="tag">＋</span>不收複雜設定<br>
+      <span class="tag">＃</span>依設定調整眼型、複製填寫表單
+    </p>
+  </div>
+
+  <p class="foot">感謝閱讀！<br>© 2026</p>
+
+</body>
+</html>
